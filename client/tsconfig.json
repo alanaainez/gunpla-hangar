@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",             // enable JSX transform
+    "module": "ESNext",
+    "target": "ES2020",
+    "allowJs": false,
+    "isolatedModules": true,        // ensures faster build with Vite
+    "noEmit": true                  // don't output JS, Vite handles it
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

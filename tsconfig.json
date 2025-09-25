@@ -1,0 +1,22 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./client" },
+    { "path": "./server" }
+  ],
+  "compilerOptions": {
+    "target": "ES2020",              // modern JS
+    "module": "ESNext",              // ES modules
+    "moduleResolution": "Node",      
+    "strict": true,                  // enable all strict type checks
+    "esModuleInterop": true,         // allow import express from 'express'
+    "skipLibCheck": true,            // skip type checking node_modules
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",                  // allows paths relative to root
+    "paths": {
+      "@types/*": ["types/*"]        // shared types folder
+    }
+  }
+}
